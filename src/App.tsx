@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, DatePicker } from 'antd'
+import { ToDo } from './components/todo';
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -22,6 +23,7 @@ function App() {
       </Button>
         <h1>Counter: {count}</h1>
       </div>
+      <ToDo/>
     </>
   )
 }
